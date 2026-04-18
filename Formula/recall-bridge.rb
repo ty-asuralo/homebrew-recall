@@ -1,8 +1,8 @@
 class RecallBridge < Formula
   desc "Chrome native messaging host for the Recall extension"
   homepage "https://github.com/ty-asuralo/recall-bridge"
-  url "https://github.com/ty-asuralo/recall-bridge/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "e2fba6391a702b4d7380ac55f89b8b614e5bc9010a915e5325b15342a0dbeb2b"
+  url "https://github.com/ty-asuralo/recall-bridge/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "c10486657cabe073c311a7e737f15141ebbf42eef47f2d68ee4c0a2fe49021f1"
   license "MIT"
 
   depends_on "node@20"
