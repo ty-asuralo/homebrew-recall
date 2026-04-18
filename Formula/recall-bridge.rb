@@ -45,19 +45,14 @@ class RecallBridge < Formula
 
   def caveats
     <<~EOS
-      To complete setup:
+      Run the interactive setup:
 
-      1. Find your Recall extension ID at chrome://extensions (enable Developer mode)
+        recall-bridge setup
 
-      2. Edit the native host manifest to set your extension ID:
-           #{Dir.home}/Library/Application Support/Google/Chrome/NativeMessagingHosts/com.recall.bridge.json
-         Replace PLACEHOLDER_EXTENSION_ID with your actual ID.
+      It will ask for your Recall extension ID (from chrome://extensions),
+      backend choice, and export folder — then configure everything.
 
-      3. Configure your backend:
-           mkdir -p ~/.config/recall-bridge
-           echo '{"version":1,"backend":"mempalace","exportDir":"/path/to/recall/export","lastIngestedAt":0}' > ~/.config/recall-bridge/config.json
-
-      4. Reload the Recall extension in chrome://extensions
+      After setup, reload the Recall extension in chrome://extensions.
     EOS
   end
 

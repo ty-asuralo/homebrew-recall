@@ -1,12 +1,13 @@
-# homebrew-tap
+# homebrew-recall
 
 Homebrew formulae for [Recall](https://github.com/ty-asuralo/recall) tools.
 
 ## Install
 
 ```bash
-brew tap ty-asuralo/tap
+brew tap ty-asuralo/recall
 brew install recall-bridge
+recall-bridge setup
 ```
 
 ## Formulae
@@ -17,4 +18,4 @@ brew install recall-bridge
 
 ## After install
 
-See `brew info recall-bridge` for setup instructions (extension ID, backend config).
+Run `recall-bridge setup` to configure your extension ID, backend, and export folder.
